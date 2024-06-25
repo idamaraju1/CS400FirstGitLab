@@ -1,6 +1,9 @@
 /*
  * Test the use of the Color method
- */
+ *  Author: Iresh Damaraju
+ *  Email: idamaraju@wisc.edu
+ *  CS: iresh@best-linux.cs.wisc.edu
+*/
 import java.util.*;
 
 public class Main{

@@ -1,5 +1,7 @@
 /*
- *	Color class
+ *	Author: Iresh Damaraju
+ *	Email: idamaraju@wisc.edu
+ *	CS: iresh@best-linux.cs.wisc.edu
  */
 public class Color{
 	private String color;
@@ -20,13 +22,17 @@ public class Color{
 	}
 
 	/* The method for changing the color
-	 * TODO: Revise the code so that it return true only if the input color is valid
-	 * 	and different from the exisitng color before making the change
+	 *  Revise the code so that it return true only if the input color is valid
+	 * and different from the exisitng color before making the change
 	 */
 	public boolean  changeColor(String newColor){
-		this.color = newColor;
-
-		return true;
+		if(!this.color.equals(newColor) && isColorValid(newColor)){
+			this.color = newColor;
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	public boolean isColorValid(String inputColor){
